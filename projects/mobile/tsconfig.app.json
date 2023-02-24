@@ -1,0 +1,48 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": [],
+    "paths": {
+      "@core/*": [
+        "./projects/mobile/src/app/*",
+        "./projects/phoenix/src/app/*",
+        "./projects/phoenix/src/app"
+      ],
+      "@services/*": [
+        "./projects/mobile/src/services/*",
+        "./projects/phoenix/src/services/*",
+        "./projects/phoenix/src/services"
+      ],
+      "@pipes/*": [
+        "./projects/mobile/src/pipes/*",
+        "./projects/phoenix/src/pipes/*",
+        "./projects/phoenix/src/pipes"
+      ],
+      "@enums/*": [
+        "./projects/phoenix/src/enums/*",
+        "./projects/phoenix/src/enums",
+      ],
+      "@interfaces/*": [
+        "./projects/phoenix/src/interfaces/*",
+        "./projects/phoenix/src/interfaces"
+      ],
+      "@directives/*": [
+        "./projects/phoenix/src/directives/*",
+        "./projects/phoenix/src/directives"
+      ]
+    }
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/app/**/*.ts",
+    "../phoenix/src/app/**/*.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "../phoenix/src/app/**/*.spec.ts"
+  ]
+}

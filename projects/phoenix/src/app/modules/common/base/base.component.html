@@ -1,0 +1,43 @@
+<header [sidenav]="sidenav">
+  Transport Application
+</header>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" width="180px" src="https://avatars.githubusercontent.com/u/10045074?v=4" />
+
+    <h4 class="name">Test User</h4>
+    <p class="designation">Some Description</p>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>info</mat-icon>
+      <span>About</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <mat-icon>help</mat-icon>
+      <span>Help</span>
+    </button>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <main class="wo-container-component  mat-elevation-z8" [class.h-100]="true">
+      <!--    <weborder-loader *ngIf="loading" [full]="true"></weborder-loader>-->
+      <div class="core-base">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

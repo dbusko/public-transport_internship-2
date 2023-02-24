@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "public-transport-ce310": {
+      "hosting": {
+        "desktop": [
+          "public-transport-ce310"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "public-transport-ce310"
+  }
+}
